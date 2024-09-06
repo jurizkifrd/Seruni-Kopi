@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** CSS untuk tombol navigasi */
+
+.filter-button.btn {
+  background-color: #00bf63 !important; /* Warna background custom */
+  color: #fff !important; /* Warna teks */
+  border-color: #00bf63 !important; /* Warna border */
+  font-weight: bold;
+}
+
+.filter-button.btn:hover {
+  background-color: #ffffff !important; /* Warna background saat di-hover */
+  color: #00bf63 !important; /* Warna teks saat di-hover */
+  border-color: #00bf63 !important; /* Warna border saat di-hover */
+}
+
+.add-to-cart.btn {
+  background-color: #00bf63 !important; /* Warna background custom */
+  color: #fff !important; /* Warna teks */
+  border-color: #00bf63 !important; /* Warna border */
+}
+
+.add-to-cart.btn:hover {
+  background-color: #ffffff !important; /* Warna background saat di-hover */
+  color: #00bf63 !important; /* Warna teks saat di-hover */
+  border-color: #00bf63 !important; /* Warna border saat di-hover */
+}
+
+@media (max-width: 767.98px) {
+  .add-to-cart {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+}
+
+.sidebar {
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+/** CSS untuk global */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+html,
+body,
+#root,
+.app,
+.content {
+  font-family: "Roboto Mono", monospace;
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #555;
+}
